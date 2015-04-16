@@ -1,5 +1,14 @@
 {
   "name": "ngAuth",
+  "authors": [
+    "sjeedandi <info@rogiervankleef.com> (http://rogiervankleef.com)"
+  ],
+  "description": "Authentication Module for AngularJS",
+  "main": "dist/angular-auth.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sjeedandi/angular-auth.git"
+  },
   "version": "0.0.0",
   "dependencies": {
     "angular": "~1.3.4"
