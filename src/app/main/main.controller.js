@@ -12,5 +12,12 @@ angular.module('ngAuth')
       .catch(function (error) {
         console.log('$ngAuth:isAuthenticated', error);
         $scope.ngAuth = error;
+        $scope.authenticate = function (credentials) {
+          $ngAuth.authenticate(credentials).then(function (uid) {
+            console.log('$ngAuth:authenticate()',credentials, uid);
+          }, function (error) {
+
+          });
+        };
       });
   });

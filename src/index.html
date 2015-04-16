@@ -24,6 +24,16 @@
     <hr>
     <h4>Status</h4>
     <code><pre>{{ngAuth|json}}</pre></code>
+    <hr>
+    <div ng-if="ngAuth===false">
+    <strong>Login</strong>
+        <form ng-submit="authenticate(credentials)">
+            <input type="text" ng-model="credentials.email">
+            <input type="password" ng-model="credentials.password">
+            <input type="checkbox" ng-model="credentials.remember"> remember
+            <button type="submit">submit</button>
+        </form>
+    </div>
         <!-- build:js(src) scripts/vendor.js -->
         <!-- bower:js -->
         <!-- run `gulp inject` to automatically populate bower script dependencies -->
